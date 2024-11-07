@@ -1,10 +1,8 @@
-import { fn } from '@storybook/test'
-import Header from '@/components/templates/Header.vue'
+import LoginLayout from '@/components/templates/LoginLayout.vue'
 
 export default {
-  title: 'Templates/Header',
-  component: Header,
-  args: { onClick: fn() },
+  title: 'Templates/LoginLayout',
+  component: LoginLayout,
   tags: ['autodocs'],
   argTypes: {
     type: {

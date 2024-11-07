@@ -1,10 +1,8 @@
-import { fn } from '@storybook/test'
-import Header from '@/components/templates/Header.vue'
+import Footer from '@/components/templates/Footer.vue'
 
 export default {
-  title: 'Templates/Header',
-  component: Header,
-  args: { onClick: fn() },
+  title: 'Templates/Footer',
+  component: Footer,
   tags: ['autodocs'],
   argTypes: {
     type: {
