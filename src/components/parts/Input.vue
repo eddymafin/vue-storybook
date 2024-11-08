@@ -33,5 +33,6 @@ defineEmits(['update:modelValue'])
   background: #fff;
   border: 1px solid #000;
   padding: 0.5em;
+  width: 100%;
 }
 </style>

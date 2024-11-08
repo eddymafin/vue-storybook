@@ -14,7 +14,7 @@ const props = defineProps({
 <template>
   <div class="">
     <Header />
-    <main>
+    <main class="l-main">
       <slot />
     </main>
     <Footer :type="props.type" />
