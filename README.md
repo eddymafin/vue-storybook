@@ -1,35 +1,25 @@
-# vue-storybook
+# コンポーネント構成
 
-This template should help get you started developing with Vue 3 in Vite.
+components  
+ -icons  
+ -parts(ボタンなど最小のコンポーネント)  
+ -templates(partsを組み合わせて作りたいもの)  
+ -views(viewごとで固有のコンポーネント)
 
-## Recommended IDE Setup
+# ページ構成
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+views  
+ -admin  
+ -user  
+ -editor
 
-## Customize configuration
+# Storybook
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+storybookの立ち上げ  
+`npm run storybook`
 
-## Project Setup
+## story作成方法
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+stories以下ディレクトリに、.stories.jsの拡張子のファイルを作成。  
+vueのコンポーネントディレクトリ構造に準拠して、storiesファイルを作成する。  
+vueのファイルは、component以下ファイルに作成して、importをして使用する。
